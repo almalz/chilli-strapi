@@ -9,9 +9,12 @@
     "build": "strapi build",
     "strapi": "strapi"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "pg": "^8.6.0"
+  },
   "dependencies": {
     "knex": "0.21.18",
+    "pg-connection-string": "^2.5.0",
     "react-color": "^2.19.3",
     "sqlite3": "5.0.0",
     "strapi": "3.6.3",
