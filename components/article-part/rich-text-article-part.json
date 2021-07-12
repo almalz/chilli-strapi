@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_article_part_rich_text_article_parts",
+  "info": {
+    "name": "RichTextArticlePart",
+    "icon": "book-open"
+  },
+  "options": {},
+  "attributes": {
+    "body": {
+      "type": "richtext"
+    }
+  }
+}

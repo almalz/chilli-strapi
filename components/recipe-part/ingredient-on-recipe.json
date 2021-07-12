@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_recipe_part_ingredient_on_recipes",
+  "info": {
+    "name": "IngredientOnRecipe",
+    "icon": "carrot",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "ingredient": {
+      "model": "ingredient"
+    },
+    "base_amount": {
+      "type": "float",
+      "required": false
+    },
+    "base_unit": {
+      "model": "unit"
+    }
+  }
+}

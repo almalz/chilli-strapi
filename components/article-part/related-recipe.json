@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_article_part_related_recipes",
+  "info": {
+    "name": "relatedRecipe",
+    "icon": "apple-alt"
+  },
+  "options": {},
+  "attributes": {
+    "recipe": {
+      "model": "recipe"
+    }
+  }
+}

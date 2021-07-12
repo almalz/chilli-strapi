@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_long_text_instruction_steps",
+  "info": {
+    "name": "InstructionStepText",
+    "icon": "edit",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

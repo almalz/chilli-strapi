@@ -1,0 +1,67 @@
+{
+  "kind": "collectionType",
+  "collectionName": "recipes",
+  "info": {
+    "name": "Recipe",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "recipeIngredients": {
+      "type": "component",
+      "repeatable": true,
+      "component": "recipe-part.ingredient-on-recipe"
+    },
+    "name": {
+      "type": "string",
+      "unique": false,
+      "required": true
+    },
+    "cookingTime": {
+      "type": "integer"
+    },
+    "prepTime": {
+      "type": "integer"
+    },
+    "tags": {
+      "collection": "tag"
+    },
+    "thumbnail": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "cover": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "author": {
+      "targetColumnName": "author",
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "recipes"
+    },
+    "Instructions": {
+      "type": "dynamiczone",
+      "components": [
+        "instruction-part.instruction-step"
+      ]
+    }
+  }
+}

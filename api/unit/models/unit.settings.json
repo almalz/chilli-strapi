@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "units",
+  "info": {
+    "name": "Unit",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "symbol": {
+      "type": "string",
+      "required": false,
+      "maxLength": 5,
+      "unique": true
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "scale": {
+      "type": "enumeration",
+      "enum": [
+        "mass",
+        "volume",
+        "temp",
+        "unit"
+      ],
+      "required": true,
+      "unique": false
+    },
+    "system": {
+      "type": "enumeration",
+      "enum": [
+        "metric",
+        "us",
+        "none"
+      ],
+      "required": true
+    }
+  }
+}
